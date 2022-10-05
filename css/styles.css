@@ -305,7 +305,7 @@ body {
 .inert-button {
   padding: 6px 22px;
   border-radius: 4px;
-  border: 1px solid var(--buttons-color);
+  border: 0;
   background-color: var(--buttons-color);
   color: var(--title-text-color);
   font-family: inherit;
@@ -324,7 +324,7 @@ body {
 .active-button {
   padding: 6px 25px;
   border-radius: 4px;
-  border: 1px solid var(--accent-color);
+  border: 0;
   background-color: var(--accent-color);
   color: var(--main-light-color);
   font-family: inherit;
