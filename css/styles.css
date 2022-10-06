@@ -40,6 +40,12 @@ body {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* header */
 
 .top {
@@ -69,6 +75,7 @@ body {
 
 /* nav contact */
 .site-nav .link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
@@ -80,8 +87,6 @@ body {
 
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: 93px;
 }
 
@@ -99,6 +104,7 @@ body {
 }
 
 .light-contact {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primery-text-color);
@@ -120,12 +126,16 @@ body {
 
 /* hero */
 .hero {
+  display: flex;
   background-color: var(--main-dark-color);
+  padding: 200px 0;
 }
+
 .hero-title {
+  display: flex;
+  margin: auto;
   margin-top: 0;
   margin-bottom: 30px;
-  margin: auto;
   text-align: center;
   color: var(--main-light-color);
   font-weight: 900;
@@ -137,11 +147,14 @@ body {
 }
 
 .hero-button {
-  display: block;
+  display: flex;
   margin: auto;
-  padding: 10px 32px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   border-radius: 4px;
-  min-width: 216px;
+  width: 216px;
+  height: 50px;
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   color: var(--main-light-color);
@@ -180,13 +193,17 @@ body {
   margin-left: 30px;
 }
 
+.pref-box {
+  width: 270px;
+}
+
 .section-pref {
-  padding-bottom: 0;
   line-height: 1.71;
 }
 .pref-item {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -206,10 +223,14 @@ body {
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.167;
   text-align: center;
 }
 /* section business */
+
+.section {
+  padding-top: 0;
+}
 
 .box {
   display: flex;
@@ -217,9 +238,6 @@ body {
 
 .box-item {
   display: flex;
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .box .box-item + .box-item {
@@ -232,11 +250,9 @@ body {
   font-size: 16px;
   line-height: 1.18;
 }
-.team-photo {
-  margin-bottom: 30px;
-  display: block;
-  max-width: 100%;
-  height: auto;
+
+.team-descr {
+  padding: 30px;
 }
 
 .team-item {
@@ -249,7 +265,6 @@ body {
 .team-text {
   margin-top: 0;
   margin-bottom: 0px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -299,6 +314,9 @@ body {
 .contact {
   line-height: 1.71;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 /* Portfolio button */
@@ -311,7 +329,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
@@ -330,7 +348,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
@@ -372,7 +390,7 @@ body {
 
 .gallery-text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .gallery-link {
